@@ -1,0 +1,20 @@
+
+.services__heading{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000050;
+    margin: 0 auto;
+}
+.underline-highlight{
+    position: relative;
+}
+.underline-highlight::after{
+    content: "";
+    position: absolute;
+    height: .125em;
+    top: 1.10em;
+    left: 0;
+    width: 100%;
+    border-radius: 4rem;
+    background: #29b6c2;
+}
