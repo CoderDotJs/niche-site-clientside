@@ -1,6 +1,6 @@
 # ApartmentFis
 
-TravelGo is a site to travel around the world without any worries we will do all the needed work for you to travel with us. 
+Apartment fis is a site to find apartment around the world without any worries we will do all the needed work for you to get your apartment. 
 
 ## Live link
 
