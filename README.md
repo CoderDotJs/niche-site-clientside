@@ -4,8 +4,8 @@ Apartment fis is a site to find apartment around the world without any worries w
 
 ## Live link
 
-Click here to visit the page: [ApartmentFis](https://travelgo-36cb3.web.app/)
-Serverside live link: [ApartmentFis Servier](https://boiling-sierra-33157.herokuapp.com/)
+Click here to visit the page: [ApartmentFis](https://apartment-fis.web.app/)
+Serverside live link: [ApartmentFis Servier](https://apartment-fis.herokuapp.com/)
 
 
 ## Why Apartments fis
