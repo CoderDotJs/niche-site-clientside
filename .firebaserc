@@ -2,8 +2,10 @@
   "projects": {
     "default": "apartment-fis"
   },
-  "rewrites": [ {
-  "source": "**",
-  "destination": "/index.html"
-} ]
+  "hosting": {
+    "rewrites": [ {
+      "source": "**",
+      "destination": "/index.html"
+     } ]
+  }
 }
