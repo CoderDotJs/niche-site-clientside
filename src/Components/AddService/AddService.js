@@ -86,7 +86,7 @@ const AddService = () => {
 
                             <div className="form-group group pt-lg-2 pt-3"> 
                             <label htmlFor="type">Type(Like Family, Bechelor, Shared)</label> 
-                            <input {...register("type")} type="text" name="type" className="form-control" required /> 
+                            <input {...register("type")} type="number" min="1" max="10" name="type" className="form-control" required /> 
                             </div>
 
 

@@ -55,12 +55,12 @@ const Header = () => {
           ? 
           <Dropdown style={{"outline": "none"}} className="me-5">
             <Dropdown.Toggle variant="none" id="dropdown-basic" className="outline-none">
-              {/* <img src={user?.photoURL} alt="" className="img-fluid rounded-circle me-2" style={{"width": "35px"}}/>{user?.displayName} */}
+              
               <i class="fas fa-columns"> </i> Dashboard
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item><img src={user?.photoURL} alt="" className="img-fluid rounded-circle me-2" style={{"width": "35px"}}/>{user?.displayName}</Dropdown.Item>
+              <Dropdown.Item>{user.photoURL ? <img src={user?.photoURL} alt="" className="img-fluid rounded-circle me-2" style={{"width": "35px"}}/> : <i class="fas fa-user-circle"></i> } {user?.displayName}</Dropdown.Item>
               {
                 !admin.isAdmin === (true || null || undefined) && <>
                 <Dropdown.Item as={NavLink} to="/my-orders">My Orders</Dropdown.Item>

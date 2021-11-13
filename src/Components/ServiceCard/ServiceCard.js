@@ -10,7 +10,7 @@ const ServiceCard = (props) => {
 
         // get the data using props 
 
-    let {_id, apartment_name, memeber, type, rating, total_beds, total_bath, apartment_size, img, price, desc} = props.prop;
+    let {_id, apartment_name, member, type, rating, total_beds, total_bath, apartment_size, img, price, desc} = props.prop;
 
     if(rating === null || rating === undefined){
         rating = 0;
@@ -41,7 +41,7 @@ const ServiceCard = (props) => {
 
                     <div className="d-flex justify-content-start align-items-center">
                       <span className="text-primary px-3 badge rounded-pill" style={{backgroundColor: '#DBEAFE', fontSize: '12px', fontWeight: '100'}}>
-                        <i class="fas fa-share-alt"></i> {memeber} Network
+                        <i class="fas fa-share-alt"></i> {member} Network
                       </span>
                       <span className="text-warning px-3 ms-3 badge rounded-pill" style={{backgroundColor: '#FEF9C3', fontSize: '12px', fontWeight: '100' }}>
                       <i class="fas fa-users"></i> {type} Family

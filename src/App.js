@@ -65,24 +65,24 @@ function App() {
           <PrivateRoute exact path="/my-orders"> {/* fro manage my orders directory */}
             <MyOrders></MyOrders>
           </PrivateRoute>
-          <PrivateRoute exact path="/manage-orders"> {/* for manage orders directory */}
+          <AdminRoute exact path="/manage-orders"> {/* for manage orders directory */}
             <ManageOrders></ManageOrders>
-          </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/add-appartment">
+          </AdminRoute>
+          <AdminRoute exact path="/dashboard/add-appartment">
               <AddService></AddService>
-          </PrivateRoute>
+          </AdminRoute>
           <PrivateRoute exact path="/dashboard/add-review">
               <AddReviewFrom></AddReviewFrom>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/manage-apartments">
+          <AdminRoute exact path="/dashboard/manage-apartments">
               <ManageApartments></ManageApartments>
-          </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/make-admin">
+          </AdminRoute>
+          <AdminRoute exact path="/dashboard/make-admin">
             <MakeAdmin></MakeAdmin>
-          </PrivateRoute>
-          <PrivateRoute exact path="/update-status/:id"> {/* for update the status of order */}
+          </AdminRoute>
+          <AdminRoute exact path="/update-status/:id"> {/* for update the status of order */}
             <UpdateStatus></UpdateStatus>
-          </PrivateRoute>
+          </AdminRoute>
           <AdminRoute exact path="/add-new-services"> {/* for add new services / package */}
             <AddService></AddService>
           </AdminRoute>

@@ -19,8 +19,8 @@ const AddReviewFrom = () => {
 
     const onSubmit = (data,e) => {
         e.preventDefault()
-        data.photoURL = user.photoURL;
-        console.log('data', data)
+        data["photoURL"] = 'https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png';
+        console.log('data', data, )
         handleAddNewReview(data)
     }
 
@@ -41,7 +41,7 @@ const AddReviewFrom = () => {
         .then(dat => {
             if (dat.acknowledged) {
                 alert('Successfully Added The Review')
-                history.push('/my-orders')
+                history.push('/home')
                 console.log(dat)
             }
             console.log(dat)
@@ -68,6 +68,7 @@ const AddReviewFrom = () => {
                             <label htmlFor="displayName">Your Name</label> 
                             <input {...register("displayName")} type="text" name="displayName" className="form-control" required /> 
                             </div>
+                            
                             
                             <div className="form-group group pt-lg-2 pt-3"> 
                             <label htmlFor="rating">Review Points(out of 5)</label> <input {...register("rating")} type="number" min="1" max="5"  name="rating" className="form-control" required /> 
