@@ -60,7 +60,7 @@ const AddReviewFrom = () => {
             <div className="wrapper rounded d-flex align-items-stretch">
                 
                 <div className="contact-form">
-                    <div className="h3">Add New Apartment Listing</div>
+                    <div className="h3">Add Your Review</div>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         
                         <div className="d-flex align-items-center flex-wrap justify-content-between pt-4">
